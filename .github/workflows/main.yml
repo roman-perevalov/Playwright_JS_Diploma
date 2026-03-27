@@ -28,8 +28,8 @@ jobs:
         continue-on-error: true
         if: always()
         with:
-          name: allure single file
+          name: Allure Report
           path: |
-              allure-report/index-html
+              allure-report/index.html
               allure-results
               playwright-report
