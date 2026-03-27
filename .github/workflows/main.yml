@@ -1,0 +1,23 @@
+name: Playwright JS Diploma /w UI and API tests
+# Запускаем при пуше в main ветку:
+on:
+  push: 
+    branches:
+      - main
+# Ручной запуск:
+  workflow_dispatch:
+
+jobs:
+  All_UI_and_API_tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6.0.2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v6.3.0
+      - name: Установка npm пакеты из package.json
+        run: npm ci
+      - name: Установка браузеров
+        run: npx playwright install --with-deps
+      - name: Запускаем тесты
+        run: npm t
