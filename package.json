@@ -17,7 +17,7 @@
     "@faker-js/faker": "^10.2.0",
     "@playwright/test": "^1.58.2",
     "@types/node": "^25.1.0",
-    "allure-playwright": "^3.4.5",
+    "allure-playwright": "^3.6.0",
     "eslint": "^9.39.2",
     "globals": "^17.3.0"
   },
