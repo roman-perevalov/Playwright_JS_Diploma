@@ -73,11 +73,11 @@ test.describe("Набор функциональных UI-тестов", () => {
 
     const firstComparisonName =
       await app.productsPage.getComparisonProductName(1);
-    const secondomparisonName =
+    const secondComparisonName =
       await app.productsPage.getComparisonProductName(2);
 
     expect(firstComparisonName).toBe(firstItemName);
-    expect(secondomparisonName).toBe(secondItemName);
+    expect(secondComparisonName).toBe(secondItemName);
   });
 
   test("Поиск товара iMac", async ({ app, registeredUser }) => {

@@ -12,7 +12,6 @@ test.describe("API Challenges", () => {
   });
 
   test(`Получить список челленджей (200)`, async ({ api }, testinfo) => {
-    // let api = new Api(request);
     let response = await api.challenges.get(testinfo, token); // отправляем запрос /challenges
 
     expect(response.status).toBe(200);
@@ -20,7 +19,6 @@ test.describe("API Challenges", () => {
   });
 
   test(`Получить список ToDo's (200)`, async ({ api }, testinfo) => {
-    // let api = new Api(request);
     let response = await api.todos.get(testinfo, token); // отправляем запрос /todos
 
     expect(response.status).toBe(200);
@@ -28,7 +26,6 @@ test.describe("API Challenges", () => {
   });
 
   test(`Сделать запрос к /todo (404)`, async ({ api }, testinfo) => {
-    // let api = new Api(request);
     let response = await api.todos.getTodo(testinfo, token); // отправляем запрос /todo
 
     expect(response.status).toBe(404); // проверяем статус-ответ респонза
@@ -37,7 +34,6 @@ test.describe("API Challenges", () => {
   test(`Запросить ToDo по существующему id (200)`, async ({
     api,
   }, testinfo) => {
-    // let api = new Api(request);
     let toDoId = 7; // id существующей задачи в ToDo
     let response = await api.todos.getTodoById(testinfo, token, toDoId); // отправляем запрос /todos c id таски
 
@@ -48,7 +44,6 @@ test.describe("API Challenges", () => {
   test(`Запросить ToDo по несуществующему id (404)`, async ({
     api,
   }, testinfo) => {
-    // let api = new Api(request);
     let toDoId = 54; // id существующей задачи в ToDo
     let response = await api.todos.getTodoById(testinfo, token, toDoId); // отправляем запрос /todos c id таски
 
@@ -60,7 +55,6 @@ test.describe("API Challenges", () => {
     const newTaskStatus = false;
     const newTaskDescription = "New task for Test project is created";
 
-    // let api = new Api(request);
     let response = await api.todos.post(
       testinfo,
       token,

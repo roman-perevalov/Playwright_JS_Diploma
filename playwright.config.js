@@ -28,17 +28,19 @@ export default defineConfig({
     // expectTimeout: 5 * 1000, // 5 секунд на ожидания (expect)
   },
 
+  globalSetup: require.resolve("./global-setup"),
+
   /* Configure projects for major browsers */
   projects: [
     {
-      name: "UI",
+      name: "UI tests",
       testMatch: "**/UI/**/*.spec.js",
       use: { ...devices["Desktop Chrome"] },
       // baseURL: `https://demo-opencart.ru/`,
     },
 
     {
-      name: "API",
+      name: "API tests",
       testMatch: "**/API/**/*.spec.js",
       use: { ...devices["Desktop Firefox"] },
       // baseURL: ДОБАВИТЬ

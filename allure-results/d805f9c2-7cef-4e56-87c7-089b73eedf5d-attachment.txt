@@ -1,2 +1,0 @@
-https://apichallenges.eviltester.com/gui/challenges/2cd2672d-24fe-4f0b-a276-2791a1e6a324
-Promise { <pending> }
