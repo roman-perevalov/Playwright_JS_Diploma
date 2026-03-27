@@ -6,10 +6,7 @@
   "scripts": {
     "test": "npx playwright test",
     "test:ui": "npx playwright test --ui",
-    "report": "npx playwright show-report",
-    "allure:generate": "allure generate awesome ./allure-results --clean --single-file",
-    "allure:open": "allure open allure-report",
-    "allure:report": "allure generate allure-results --clean --single-file && allure open allure-report"
+    "report": "npx playwright show-report"
   },
   "keywords": [],
   "author": "Roman Perevalov",
