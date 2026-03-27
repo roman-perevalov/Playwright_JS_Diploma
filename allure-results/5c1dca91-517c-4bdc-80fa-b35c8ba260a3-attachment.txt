@@ -1,0 +1,22 @@
+APIResponse: 404 Not Found
+  Connection: keep-alive
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Server: railway-edge
+  X-Challenger: 6111f37d-c75f-4f90-953c-4112eaadf0ce
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: rkJqwph-Q7SEApJ4YqdHTg
+  X-Robots-Tag: noindex
+  Accept-Ranges: bytes
+  Date: Sun, 15 Mar 2026 18:05:23 GMT
+  Via: 1.1 varnish
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  X-Timer: S1773597923.035275,VS0,VE169
+  Vary: Accept-Encoding
+  X-Railway-CDN-Edge: fastly/cache-vie6367-VIE
+  transfer-encoding: chunked

@@ -1,0 +1,6 @@
+{
+  errorMessages: [ 'Cannot amend details. Missing a valid X-CHALLENGER header.' ]
+}
+{
+  errorMessages: [ 'Could not find an instance with todos/undefined' ]
+}

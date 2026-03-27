@@ -1,0 +1,14 @@
+APIResponse: 404 Not Found
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Date: Sun, 22 Mar 2026 14:43:22 GMT
+  Server: railway-edge
+  X-Challenger: 68c4ffd3-f1d9-4e3c-99cd-1c8fa868119c
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: FsNyKYbtS7un0ySZss7a6g
+  X-Robots-Tag: noindex
+  Transfer-Encoding: chunked

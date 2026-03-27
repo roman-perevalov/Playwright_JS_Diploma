@@ -1,0 +1,16 @@
+undefined
+APIResponse: 201 Created
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Date: Sun, 22 Mar 2026 14:50:36 GMT
+  Location: /todos/11
+  Server: railway-edge
+  X-Challenger: 3f035dce-dc6a-41ca-89c9-bbf5b4c64b4b
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: zrDKhSxOSgmY8qoQ2JZdWA
+  X-Robots-Tag: noindex
+  Transfer-Encoding: chunked

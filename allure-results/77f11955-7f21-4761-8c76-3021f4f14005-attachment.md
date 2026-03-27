@@ -1,0 +1,189 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "" [ref=e7] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=information/contact
+          - generic [ref=e8]: 
+        - text: 495 888-88-88
+      - listitem [ref=e9]:
+        - link " Личный кабинет" [ref=e10] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/account
+          - generic [ref=e11]: 
+          - text: Личный кабинет
+      - listitem [ref=e13]:
+        - link " Закладки (0)" [ref=e14] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+          - generic [ref=e15]: 
+          - text: Закладки (0)
+      - listitem [ref=e16]:
+        - link " Корзина" [ref=e17] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/cart
+          - generic [ref=e18]: 
+          - text: Корзина
+      - listitem [ref=e19]:
+        - link " Оформление заказа" [ref=e20] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/checkout
+          - generic [ref=e21]: 
+          - text: Оформление заказа
+  - banner [ref=e22]:
+    - generic [ref=e24]:
+      - heading "Интернет магазин Opencart" [level=1] [ref=e27]:
+        - link "Интернет магазин Opencart" [ref=e28] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+      - generic [ref=e30]:
+        - textbox "Поиск" [ref=e31]
+        - button "" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 
+      - button " Товаров 0 (0р.)" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: 
+        - text: Товаров 0 (0р.)
+  - navigation [ref=e40]:
+    - generic: 
+    - list [ref=e42]:
+      - listitem [ref=e43]:
+        - link "Компьютеры" [ref=e44] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=20
+      - listitem [ref=e45]:
+        - link "Ноутбуки" [ref=e46] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=18
+      - listitem [ref=e47]:
+        - link "Комплектующие" [ref=e48] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=25
+      - listitem [ref=e49]:
+        - link "Планшеты" [ref=e50] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=57
+      - listitem [ref=e51]:
+        - link "Софт" [ref=e52] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=17
+      - listitem [ref=e53]:
+        - link "Телефоны" [ref=e54] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=24
+      - listitem [ref=e55]:
+        - link "Камеры" [ref=e56] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=33
+      - listitem [ref=e57]:
+        - link "MP3 плееры" [ref=e58] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=34
+  - generic [ref=e59]:
+    - list [ref=e60]:
+      - listitem [ref=e61]:
+        - link "" [ref=e62] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+          - generic [ref=e63]: 
+      - listitem [ref=e64]:
+        - link "Личный Кабинет" [ref=e65] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/account
+      - listitem [ref=e66]:
+        - link "Успешно" [ref=e67] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/success
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - heading "Ваша учетная запись создана!" [level=1] [ref=e70]
+        - paragraph [ref=e71]: Поздравляем! Ваш Личный Кабинет был успешно создан.
+        - paragraph [ref=e72]: "Теперь Вы можете воспользоваться дополнительными возможностями: просмотр истории заказов, печать счета, изменение своей контактной информации и адресов доставки и многое другое."
+        - paragraph [ref=e73]:
+          - text: Если у Вас есть какие-либо вопросы,
+          - link "напишите нам" [ref=e74] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=information/contact
+          - text: .
+        - link "Продолжить" [ref=e76] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/account
+      - complementary [ref=e77]:
+        - generic [ref=e78]:
+          - link "Моя информация" [ref=e79] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/account
+          - link "Изменить контактную информацию" [ref=e80] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/edit
+          - link "Пароль" [ref=e81] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/password
+          - link "Адресная книга" [ref=e82] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/address
+          - link "Закладки" [ref=e83] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+          - link "История заказов" [ref=e84] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/order
+          - link "Файлы для скачивания" [ref=e85] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/download
+          - link "Регулярные платежи" [ref=e86] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/recurring
+          - link "Бонусные баллы" [ref=e87] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/reward
+          - link "Возвраты" [ref=e88] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/return
+          - link "История транзакций" [ref=e89] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/transaction
+          - link "E-Mail рассылка" [ref=e90] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/newsletter
+          - link "Выход" [ref=e91] [cursor=pointer]:
+            - /url: https://demo-opencart.ru/index.php?route=account/logout
+  - contentinfo [ref=e92]:
+    - generic [ref=e93]:
+      - generic [ref=e94]:
+        - generic [ref=e95]:
+          - heading "Информация" [level=5] [ref=e96]
+          - list [ref=e97]:
+            - listitem [ref=e98]:
+              - link "О нас" [ref=e99] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=4
+            - listitem [ref=e100]:
+              - link "Доставка" [ref=e101] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=6
+            - listitem [ref=e102]:
+              - link "Политика Безопасности" [ref=e103] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=3
+            - listitem [ref=e104]:
+              - link "Условия соглашения" [ref=e105] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=5
+        - generic [ref=e106]:
+          - heading "Служба поддержки" [level=5] [ref=e107]
+          - list [ref=e108]:
+            - listitem [ref=e109]:
+              - link "Контакты" [ref=e110] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/contact
+            - listitem [ref=e111]:
+              - link "Возврат товара" [ref=e112] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/return/add
+            - listitem [ref=e113]:
+              - link "Карта сайта" [ref=e114] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/sitemap
+        - generic [ref=e115]:
+          - heading "Дополнительно" [level=5] [ref=e116]
+          - list [ref=e117]:
+            - listitem [ref=e118]:
+              - link "Производители" [ref=e119] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/manufacturer
+            - listitem [ref=e120]:
+              - link "Подарочные сертификаты" [ref=e121] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/voucher
+            - listitem [ref=e122]:
+              - link "Партнерская программа" [ref=e123] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=affiliate/login
+            - listitem [ref=e124]:
+              - link "Акции" [ref=e125] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/special
+        - generic [ref=e126]:
+          - heading "Личный Кабинет" [level=5] [ref=e127]
+          - list [ref=e128]:
+            - listitem [ref=e129]:
+              - link "Личный Кабинет" [ref=e130] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/account
+            - listitem [ref=e131]:
+              - link "История заказов" [ref=e132] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/order
+            - listitem [ref=e133]:
+              - link "Закладки" [ref=e134] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+            - listitem [ref=e135]:
+              - link "Рассылка" [ref=e136] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/newsletter
+      - separator [ref=e137]
+      - paragraph [ref=e138]:
+        - text: Работает на
+        - link "OpenCart" [ref=e139] [cursor=pointer]:
+          - /url: https://opencart.ru
+        - text: Интернет магазин Opencart © 2026
+```

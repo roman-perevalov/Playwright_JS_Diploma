@@ -1,0 +1,217 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "" [ref=e7] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=information/contact
+          - generic [ref=e8]: 
+        - text: 495 888-88-88
+      - listitem [ref=e9]:
+        - link " Личный кабинет" [ref=e10] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/account
+          - generic [ref=e11]: 
+          - text: Личный кабинет
+      - listitem [ref=e13]:
+        - link " Закладки (0)" [ref=e14] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+          - generic [ref=e15]: 
+          - text: Закладки (0)
+      - listitem [ref=e16]:
+        - link " Корзина" [ref=e17] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/cart
+          - generic [ref=e18]: 
+          - text: Корзина
+      - listitem [ref=e19]:
+        - link " Оформление заказа" [ref=e20] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/checkout
+          - generic [ref=e21]: 
+          - text: Оформление заказа
+  - banner [ref=e22]:
+    - generic [ref=e24]:
+      - heading "Интернет магазин Opencart" [level=1] [ref=e27]:
+        - link "Интернет магазин Opencart" [ref=e28] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+      - generic [ref=e30]:
+        - textbox "Поиск" [ref=e31]
+        - button "" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 
+      - generic [ref=e36]:
+        - button " Товаров 1 (100р.)" [ref=e37] [cursor=pointer]:
+          - generic [ref=e38]: 
+          - text: Товаров 1 (100р.)
+        - text:   
+  - navigation [ref=e40]:
+    - generic: 
+    - list [ref=e42]:
+      - listitem [ref=e43]:
+        - link "Компьютеры" [ref=e44] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=20
+      - listitem [ref=e45]:
+        - link "Ноутбуки" [ref=e46] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=18
+      - listitem [ref=e47]:
+        - link "Комплектующие" [ref=e48] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=25
+      - listitem [ref=e49]:
+        - link "Планшеты" [ref=e50] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=57
+      - listitem [ref=e51]:
+        - link "Софт" [ref=e52] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=17
+      - listitem [ref=e53]:
+        - link "Телефоны" [ref=e54] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=24
+      - listitem [ref=e55]:
+        - link "Камеры" [ref=e56] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=33
+      - listitem [ref=e57]:
+        - link "MP3 плееры" [ref=e58] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=34
+  - generic [ref=e59]:
+    - list [ref=e60]:
+      - listitem [ref=e61]:
+        - link "" [ref=e62] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+          - generic [ref=e63]: 
+      - listitem [ref=e64]:
+        - link "Корзина покупок" [ref=e65] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/cart
+      - listitem [ref=e66]:
+        - link "Оформление заказа" [ref=e67] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/checkout
+    - generic [ref=e69]:
+      - heading "Оформление заказа" [level=1] [ref=e70]
+      - generic [ref=e71]:
+        - 'heading "Шаг 1: Способ оформления заказа" [level=4] [ref=e74]'
+        - generic [ref=e75]:
+          - 'heading "Шаг 2: Платежная информация " [level=4] [ref=e77]':
+            - 'link "Шаг 2: Платежная информация " [ref=e78] [cursor=pointer]':
+              - /url: "#collapse-payment-address"
+              - text: "Шаг 2: Платежная информация"
+              - generic [ref=e79]: 
+          - text: "* * * * * *"
+        - generic [ref=e80]:
+          - 'heading "Шаг 3: Адрес доставки " [level=4] [ref=e82]':
+            - 'link "Шаг 3: Адрес доставки " [ref=e83] [cursor=pointer]':
+              - /url: "#collapse-shipping-address"
+              - text: "Шаг 3: Адрес доставки"
+              - generic [ref=e84]: 
+          - text: "* * * * * *"
+        - 'heading "Шаг 4: Способ доставки " [level=4] [ref=e87]':
+          - 'link "Шаг 4: Способ доставки " [ref=e88] [cursor=pointer]':
+            - /url: "#collapse-shipping-method"
+            - text: "Шаг 4: Способ доставки"
+            - generic [ref=e89]: 
+        - 'heading "Шаг 5: Способ оплаты " [level=4] [ref=e92]':
+          - 'link "Шаг 5: Способ оплаты " [ref=e93] [cursor=pointer]':
+            - /url: "#collapse-payment-method"
+            - text: "Шаг 5: Способ оплаты"
+            - generic [ref=e94]: 
+        - generic [ref=e95]:
+          - 'heading "Шаг 6: Подтверждение заказа " [level=4] [ref=e97]':
+            - 'link "Шаг 6: Подтверждение заказа " [expanded] [ref=e98] [cursor=pointer]':
+              - /url: "#collapse-checkout-confirm"
+              - text: "Шаг 6: Подтверждение заказа"
+              - generic [ref=e99]: 
+          - generic [ref=e101]:
+            - table [ref=e103]:
+              - rowgroup [ref=e104]:
+                - row "Название товара Модель Количество Цена Итого" [ref=e105]:
+                  - cell "Название товара" [ref=e106]
+                  - cell "Модель" [ref=e107]
+                  - cell "Количество" [ref=e108]
+                  - cell "Цена" [ref=e109]
+                  - cell "Итого" [ref=e110]
+              - rowgroup [ref=e111]:
+                - row "iMac Product 14 1 100р. 100р." [ref=e112]:
+                  - cell "iMac" [ref=e113]:
+                    - link "iMac" [ref=e114] [cursor=pointer]:
+                      - /url: https://demo-opencart.ru/index.php?route=product/product&product_id=41
+                  - cell "Product 14" [ref=e115]
+                  - cell "1" [ref=e116]
+                  - cell "100р." [ref=e117]
+                  - cell "100р." [ref=e118]
+              - rowgroup [ref=e119]:
+                - 'row "Сумма: 100р." [ref=e120]':
+                  - cell "Сумма:" [ref=e121]:
+                    - strong [ref=e122]: "Сумма:"
+                  - cell "100р." [ref=e123]
+                - 'row "Доставка с фиксированной стоимостью доставки: 5р." [ref=e124]':
+                  - cell "Доставка с фиксированной стоимостью доставки:" [ref=e125]:
+                    - strong [ref=e126]: "Доставка с фиксированной стоимостью доставки:"
+                  - cell "5р." [ref=e127]
+                - 'row "Итого: 105р." [ref=e128]':
+                  - cell "Итого:" [ref=e129]:
+                    - strong [ref=e130]: "Итого:"
+                  - cell "105р." [ref=e131]
+            - button "Загрузка..." [disabled] [ref=e133]
+  - contentinfo [ref=e134]:
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - generic [ref=e137]:
+          - heading "Информация" [level=5] [ref=e138]
+          - list [ref=e139]:
+            - listitem [ref=e140]:
+              - link "О нас" [ref=e141] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=4
+            - listitem [ref=e142]:
+              - link "Доставка" [ref=e143] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=6
+            - listitem [ref=e144]:
+              - link "Политика Безопасности" [ref=e145] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=3
+            - listitem [ref=e146]:
+              - link "Условия соглашения" [ref=e147] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=5
+        - generic [ref=e148]:
+          - heading "Служба поддержки" [level=5] [ref=e149]
+          - list [ref=e150]:
+            - listitem [ref=e151]:
+              - link "Контакты" [ref=e152] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/contact
+            - listitem [ref=e153]:
+              - link "Возврат товара" [ref=e154] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/return/add
+            - listitem [ref=e155]:
+              - link "Карта сайта" [ref=e156] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/sitemap
+        - generic [ref=e157]:
+          - heading "Дополнительно" [level=5] [ref=e158]
+          - list [ref=e159]:
+            - listitem [ref=e160]:
+              - link "Производители" [ref=e161] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/manufacturer
+            - listitem [ref=e162]:
+              - link "Подарочные сертификаты" [ref=e163] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/voucher
+            - listitem [ref=e164]:
+              - link "Партнерская программа" [ref=e165] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=affiliate/login
+            - listitem [ref=e166]:
+              - link "Акции" [ref=e167] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/special
+        - generic [ref=e168]:
+          - heading "Личный Кабинет" [level=5] [ref=e169]
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "Личный Кабинет" [ref=e172] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/account
+            - listitem [ref=e173]:
+              - link "История заказов" [ref=e174] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/order
+            - listitem [ref=e175]:
+              - link "Закладки" [ref=e176] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+            - listitem [ref=e177]:
+              - link "Рассылка" [ref=e178] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/newsletter
+      - separator [ref=e179]
+      - paragraph [ref=e180]:
+        - text: Работает на
+        - link "OpenCart" [ref=e181] [cursor=pointer]:
+          - /url: https://opencart.ru
+        - text: Интернет магазин Opencart © 2026
+```

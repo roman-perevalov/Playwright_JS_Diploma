@@ -1,0 +1,24 @@
+https://apichallenges.eviltester.com/gui/challenges/7ec42466-d6d9-406a-b24c-4b89f1d4fce2
+APIResponse: 200 OK
+  Connection: keep-alive
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Location: /gui/challenges/7ec42466-d6d9-406a-b24c-4b89f1d4fce2
+  Server: railway-edge
+  X-Challenger: 7ec42466-d6d9-406a-b24c-4b89f1d4fce2
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: qoknnkdIRW626CcorJsmnA
+  X-Robots-Tag: noindex
+  Accept-Ranges: bytes
+  Date: Sun, 15 Mar 2026 16:14:47 GMT
+  Via: 1.1 varnish
+  X-Cache: MISS
+  X-Cache-Hits: 0
+  X-Timer: S1773591287.440954,VS0,VE316
+  Vary: Accept-Encoding
+  X-Railway-CDN-Edge: fastly/cache-vie6337-VIE
+  transfer-encoding: chunked

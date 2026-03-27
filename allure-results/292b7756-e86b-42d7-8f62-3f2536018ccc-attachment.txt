@@ -1,0 +1,30 @@
+APIResponse: 201 Created
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Date: Sun, 22 Mar 2026 14:50:22 GMT
+  Location: /todos/11
+  Server: railway-edge
+  X-Challenger: ea8654c4-233f-4d63-9694-966e156912df
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: 8YdqccUZSJeKRzdUjUJq2g
+  X-Robots-Tag: noindex
+  Transfer-Encoding: chunked
+APIResponse: 201 Created
+  Access-Control-Allow-Credentials: true
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: *
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: *
+  Content-Type: application/json
+  Date: Sun, 22 Mar 2026 14:50:22 GMT
+  Location: /todos/11
+  Server: railway-edge
+  X-Challenger: ea8654c4-233f-4d63-9694-966e156912df
+  X-Railway-Edge: railway/europe-west4-drams3a
+  X-Railway-Request-Id: 8YdqccUZSJeKRzdUjUJq2g
+  X-Robots-Tag: noindex
+  Transfer-Encoding: chunked

@@ -1,0 +1,225 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "" [ref=e7] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=information/contact
+          - generic [ref=e8]: 
+        - text: 495 888-88-88
+      - listitem [ref=e9]:
+        - link " Личный кабинет" [ref=e10] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/account
+          - generic [ref=e11]: 
+          - text: Личный кабинет
+      - listitem [ref=e13]:
+        - link " Закладки (0)" [ref=e14] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+          - generic [ref=e15]: 
+          - text: Закладки (0)
+      - listitem [ref=e16]:
+        - link " Корзина" [ref=e17] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/cart
+          - generic [ref=e18]: 
+          - text: Корзина
+      - listitem [ref=e19]:
+        - link " Оформление заказа" [ref=e20] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=checkout/checkout
+          - generic [ref=e21]: 
+          - text: Оформление заказа
+  - banner [ref=e22]:
+    - generic [ref=e24]:
+      - heading "Интернет магазин Opencart" [level=1] [ref=e27]:
+        - link "Интернет магазин Opencart" [ref=e28] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+      - generic [ref=e30]:
+        - textbox "Поиск" [ref=e31]
+        - button "" [ref=e33] [cursor=pointer]:
+          - generic [ref=e34]: 
+      - button " Товаров 0 (0р.)" [ref=e37] [cursor=pointer]:
+        - generic [ref=e38]: 
+        - text: Товаров 0 (0р.)
+  - navigation [ref=e40]:
+    - generic: 
+    - list [ref=e42]:
+      - listitem [ref=e43]:
+        - link "Компьютеры" [ref=e44] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=20
+      - listitem [ref=e45]:
+        - link "Ноутбуки" [ref=e46] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=18
+      - listitem [ref=e47]:
+        - link "Комплектующие" [ref=e48] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=25
+      - listitem [ref=e49]:
+        - link "Планшеты" [ref=e50] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=57
+      - listitem [ref=e51]:
+        - link "Софт" [ref=e52] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=17
+      - listitem [ref=e53]:
+        - link "Телефоны" [ref=e54] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=24
+      - listitem [ref=e55]:
+        - link "Камеры" [ref=e56] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=33
+      - listitem [ref=e57]:
+        - link "MP3 плееры" [ref=e58] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/category&path=34
+  - generic [ref=e59]:
+    - list [ref=e60]:
+      - listitem [ref=e61]:
+        - link "" [ref=e62] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=common/home
+          - generic [ref=e63]: 
+      - listitem [ref=e64]:
+        - link "Сравнение товаров" [ref=e65] [cursor=pointer]:
+          - /url: https://demo-opencart.ru/index.php?route=product/compare
+    - generic [ref=e67]:
+      - heading "Сравнение товаров" [level=1] [ref=e68]
+      - table [ref=e69]:
+        - rowgroup [ref=e70]:
+          - row "Описание" [ref=e71]:
+            - cell "Описание" [ref=e72]:
+              - strong [ref=e73]: Описание
+        - rowgroup [ref=e74]:
+          - row "Товар iPod Classic iPod Nano" [ref=e75]:
+            - cell "Товар" [ref=e76]
+            - cell "iPod Classic" [ref=e77]:
+              - link "iPod Classic" [ref=e78] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/product&product_id=48
+                - strong [ref=e79]: iPod Classic
+            - cell "iPod Nano" [ref=e80]:
+              - link "iPod Nano" [ref=e81] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/product&product_id=36
+                - strong [ref=e82]: iPod Nano
+          - row "Изображение iPod Classic iPod Nano" [ref=e83]:
+            - cell "Изображение" [ref=e84]
+            - cell "iPod Classic" [ref=e85]:
+              - img "iPod Classic" [ref=e86]
+            - cell "iPod Nano" [ref=e87]:
+              - img "iPod Nano" [ref=e88]
+          - row "Цена 100р. 100р." [ref=e89]:
+            - cell "Цена" [ref=e90]
+            - cell "100р." [ref=e91]
+            - cell "100р." [ref=e92]
+          - row "Модель product 20 Product 9" [ref=e93]:
+            - cell "Модель" [ref=e94]
+            - cell "product 20" [ref=e95]
+            - cell "Product 9" [ref=e96]
+          - row "Производитель Apple Apple" [ref=e97]:
+            - cell "Производитель" [ref=e98]
+            - cell "Apple" [ref=e99]
+            - cell "Apple" [ref=e100]
+          - row "Наличие Есть на складе Есть на складе" [ref=e101]:
+            - cell "Наличие" [ref=e102]
+            - cell "Есть на складе" [ref=e103]
+            - cell "Есть на складе" [ref=e104]
+          - 'row "Рейтинг      Всего отзывов: 0      Всего отзывов: 0" [ref=e105]':
+            - cell "Рейтинг" [ref=e106]
+            - 'cell "     Всего отзывов: 0" [ref=e107]':
+              - generic [ref=e109]: 
+              - generic [ref=e111]: 
+              - generic [ref=e113]: 
+              - generic [ref=e115]: 
+              - generic [ref=e117]: 
+              - text: "Всего отзывов: 0"
+            - 'cell "     Всего отзывов: 0" [ref=e118]':
+              - generic [ref=e120]: 
+              - generic [ref=e122]: 
+              - generic [ref=e124]: 
+              - generic [ref=e126]: 
+              - generic [ref=e128]: 
+              - text: "Всего отзывов: 0"
+          - 'row "Краткое описание More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combi.. Video in your pocket. Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% .." [ref=e129]':
+            - cell "Краткое описание" [ref=e130]
+            - cell "More room to move. With 80GB or 160GB of storage and up to 40 hours of battery life, the new iPod classic lets you enjoy up to 40,000 songs or up to 200 hours of video or any combi.." [ref=e131]
+            - 'cell "Video in your pocket. Its the small iPod with one very big idea: video. The worlds most popular music player now lets you enjoy movies, TV shows, and more on a two-inch display thats 65% .." [ref=e132]'
+          - row "Вес 1.00кг 5.00кг" [ref=e133]:
+            - cell "Вес" [ref=e134]
+            - cell "1.00кг" [ref=e135]
+            - cell "5.00кг" [ref=e136]
+          - row "Размеры (Д х Ш х В) 0.00мм x 0.00мм x 0.00мм 0.00мм x 0.00мм x 0.00мм" [ref=e137]:
+            - cell "Размеры (Д х Ш х В)" [ref=e138]
+            - cell "0.00мм x 0.00мм x 0.00мм" [ref=e139]
+            - cell "0.00мм x 0.00мм x 0.00мм" [ref=e140]
+        - rowgroup [ref=e141]:
+          - row "Купить Удалить Купить Удалить" [ref=e142]:
+            - cell [ref=e143]
+            - cell "Купить Удалить" [ref=e144]:
+              - button "Купить" [ref=e145] [cursor=pointer]
+              - link "Удалить" [ref=e146] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/compare&remove=48
+            - cell "Купить Удалить" [ref=e147]:
+              - button "Купить" [ref=e148] [cursor=pointer]
+              - link "Удалить" [ref=e149] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/compare&remove=36
+  - contentinfo [ref=e150]:
+    - generic [ref=e151]:
+      - generic [ref=e152]:
+        - generic [ref=e153]:
+          - heading "Информация" [level=5] [ref=e154]
+          - list [ref=e155]:
+            - listitem [ref=e156]:
+              - link "О нас" [ref=e157] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=4
+            - listitem [ref=e158]:
+              - link "Доставка" [ref=e159] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=6
+            - listitem [ref=e160]:
+              - link "Политика Безопасности" [ref=e161] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=3
+            - listitem [ref=e162]:
+              - link "Условия соглашения" [ref=e163] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/information&information_id=5
+        - generic [ref=e164]:
+          - heading "Служба поддержки" [level=5] [ref=e165]
+          - list [ref=e166]:
+            - listitem [ref=e167]:
+              - link "Контакты" [ref=e168] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/contact
+            - listitem [ref=e169]:
+              - link "Возврат товара" [ref=e170] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/return/add
+            - listitem [ref=e171]:
+              - link "Карта сайта" [ref=e172] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=information/sitemap
+        - generic [ref=e173]:
+          - heading "Дополнительно" [level=5] [ref=e174]
+          - list [ref=e175]:
+            - listitem [ref=e176]:
+              - link "Производители" [ref=e177] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/manufacturer
+            - listitem [ref=e178]:
+              - link "Подарочные сертификаты" [ref=e179] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/voucher
+            - listitem [ref=e180]:
+              - link "Партнерская программа" [ref=e181] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=affiliate/login
+            - listitem [ref=e182]:
+              - link "Акции" [ref=e183] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=product/special
+        - generic [ref=e184]:
+          - heading "Личный Кабинет" [level=5] [ref=e185]
+          - list [ref=e186]:
+            - listitem [ref=e187]:
+              - link "Личный Кабинет" [ref=e188] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/account
+            - listitem [ref=e189]:
+              - link "История заказов" [ref=e190] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/order
+            - listitem [ref=e191]:
+              - link "Закладки" [ref=e192] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/wishlist
+            - listitem [ref=e193]:
+              - link "Рассылка" [ref=e194] [cursor=pointer]:
+                - /url: https://demo-opencart.ru/index.php?route=account/newsletter
+      - separator [ref=e195]
+      - paragraph [ref=e196]:
+        - text: Работает на
+        - link "OpenCart" [ref=e197] [cursor=pointer]:
+          - /url: https://opencart.ru
+        - text: Интернет магазин Opencart © 2026
+```
