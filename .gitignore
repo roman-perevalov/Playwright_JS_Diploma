@@ -10,4 +10,4 @@ allure-report/
 /playwright/.auth/
 .DS_Store
 *.code-workspace
-global-setup.js
+/global-setup.js
