@@ -28,8 +28,6 @@ export default defineConfig({
     // expectTimeout: 5 * 1000, // 5 секунд на ожидания (expect)
   },
 
-  // globalSetup: require.resolve("./global-setup"),
-
   /* Configure projects for major browsers */
   projects: [
     {
