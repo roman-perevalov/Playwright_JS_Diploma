@@ -8,14 +8,22 @@
 
 ## 🛠 Технологии и инструменты
 
+
+![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=for-the-badge&logo=playwright&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Faker.js](https://img.shields.io/badge/Faker.js-FF6F00?style=for-the-badge&logo=javascript&logoColor=white)
+![Allure](https://img.shields.io/badge/Allure-EE4C2C?style=for-the-badge&logo=allure&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
+![Telegram Bot](https://img.shields.io/badge/Telegram_Bot-26A5E4?style=for-the-badge&logo=telegram&logoColor=white)
+
 В проекте используется современный стек технологий для автоматизации тестирования:
 
 * **[Playwright](https://playwright.dev/)** — мощный фреймворк для автоматизации UI и API тестов
 * **[JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)** — основной язык программирования проекта
 * **[Faker.js](https://fakerjs.dev/)** — библиотека для генерации случайных тестовых данных
 * **[Allure Report](https://allurereport.org/)** — утилита для создания наглядных и интерактивных отчетов о результатах тестирования
-* **GitHub Actions** — платформа для непрерывной интеграции и доставки (CI/CD)
-* **Telegram Bot** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
+* **[GitHub Actions](https://github.com/features/actions)** — платформа для непрерывной интеграции и доставки (CI/CD)
+* **[Telegram Bot](https://core.telegram.org/bots/api)** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
 
 ---
 
