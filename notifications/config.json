@@ -1,0 +1,20 @@
+{
+  "base": {
+    "logo": "",
+    "project": "RP Diploma",
+    "environment": "prod",
+    "comment": "Some comment",
+    "reportLink": "Some link",
+    "language": "ru",
+    "allureFolder": "allure-report",
+    "enableChart": true,
+    "enableSuitesPublishing": false,
+    "customData": {}
+  },
+  "telegram": {
+    "token": "8693942023:AAE9kQ1-bttBWgZs6gh-XrFUUbCzpIUGm_o",
+    "chat": "-5143690180",
+    "topic": "Отчет об автотесте готов",
+    "replyTo": ""
+  }
+}
