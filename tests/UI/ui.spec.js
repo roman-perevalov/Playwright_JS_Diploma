@@ -4,7 +4,7 @@ import { UserBuilder } from "../../src/helpers/builders/user.builder";
 
 test.describe("Набор функциональных UI-тестов", () => {
   test(
-    "Изменить контактную информацию ",
+    "Изменить контактную информацию",
     {
       tag: ["@UI"],
     },

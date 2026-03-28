@@ -25,7 +25,7 @@ test.describe("API Challenges", () => {
   );
 
   test(
-    `Получить список ToDo's (200)`,
+    `Получить список ToDo (200)`,
     {
       tag: ["@API"],
     },
