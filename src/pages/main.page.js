@@ -45,12 +45,6 @@ export class MainPage {
     });
   }
 
-  async goToCart() {
-    return test.step("Перейти в 'Корзину'", async (step) => {
-      await this.cartButton.click();
-    });
-  }
-
   async goToMp3Players() {
     return test.step("Перейти на страницу 'MP3 Players'", async (step) => {
       await this.mp3PlayersMenu.click();
