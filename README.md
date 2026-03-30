@@ -17,21 +17,12 @@
 
 В проекте используется современный стек технологий для автоматизации тестирования:
 
-<<<<<<< HEAD
-
 - **[Playwright](https://playwright.dev/)** — мощный фреймворк для автоматизации UI и API тестов
 - **[JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)** — основной язык программирования проекта
 - **[Faker.js](https://fakerjs.dev/)** — библиотека для генерации случайных тестовых данных
 - **[Allure Report](https://allurereport.org/)** — утилита для создания наглядных и интерактивных отчетов о результатах тестирования
-- **GitHub Actions** — платформа для непрерывной интеграции и доставки (CI/CD)
-- # **Telegram Bot** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
-
-* **[Playwright](https://playwright.dev/)** — мощный фреймворк для автоматизации UI и API тестов
-* **[JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)** — основной язык программирования проекта
-* **[Faker.js](https://fakerjs.dev/)** — библиотека для генерации случайных тестовых данных
-* **[Allure Report](https://allurereport.org/)** — утилита для создания наглядных и интерактивных отчетов о результатах тестирования
-* **[GitHub Actions](https://github.com/features/actions)** — платформа для непрерывной интеграции и доставки (CI/CD)
-* **[Telegram Bot](https://core.telegram.org/bots/api)** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
+- **[GitHub Actions](https://github.com/features/actions)** — платформа для непрерывной интеграции и доставки (CI/CD)
+- **[Telegram Bot](https://core.telegram.org/bots/api)** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
 
 ---
 
@@ -72,8 +63,8 @@
 ├── src/helpers/
 │   ├── builders       # Билдер юзера для UI тестов
 │   └── fixtures       # Фикстуры для UI и API тестов
-├── tests/ui           # UI тесты
-└── tests/api          # API тесты
+├── tests/UI           # UI тесты
+└── tests/API          # API тесты
 ```
 
 ---
