@@ -1,9 +1,9 @@
 import { expect } from "@playwright/test";
-import { test } from "../../src/helpers/fixtures/ui.fixtures";
+import { uiTest } from "../../src/helpers/fixtures/ui.fixtures";
 import { UserBuilder } from "../../src/helpers/builders/user.builder";
 
-test.describe("Набор функциональных UI-тестов", () => {
-  test(
+uiTest.describe("Набор функциональных UI-тестов", () => {
+  uiTest(
     "Изменить контактную информацию",
     {
       tag: ["@UI"],
@@ -41,7 +41,7 @@ test.describe("Набор функциональных UI-тестов", () => {
     },
   );
 
-  test(
+  uiTest(
     "Купить iMac",
     {
       tag: ["@UI"],
@@ -63,7 +63,7 @@ test.describe("Набор функциональных UI-тестов", () => {
     },
   );
 
-  test(
+  uiTest(
     "Добавить iMac в «Избранное»",
     {
       tag: ["@UI"],
@@ -71,9 +71,9 @@ test.describe("Набор функциональных UI-тестов", () => {
     async ({ app, registeredUser }) => {
       await app.mainPage.goToiMacs();
 
-      const productName = await app.productsPage.getProductName(0);
+      const productName = await app.productsPage.getFirstProductName();
 
-      await app.productsPage.addToFavotire(0);
+      await app.productsPage.addToFavotire();
       await app.productsPage.goToFavorite();
 
       await expect(app.productsPage.getTbodyLocator()).toContainText(
@@ -82,7 +82,7 @@ test.describe("Набор функциональных UI-тестов", () => {
     },
   );
 
-  test(
+  uiTest(
     "Сравнить товары",
     {
       tag: ["@UI"],
@@ -90,25 +90,25 @@ test.describe("Набор функциональных UI-тестов", () => {
     async ({ app, registeredUser }) => {
       await app.mainPage.goToMp3Players();
 
-      const firstItemName = await app.productsPage.getProductName(0);
-      const secondItemName = await app.productsPage.getProductName(1);
+      const firstItemName = await app.productsPage.getFirstProductName();
+      const secondItemName = await app.productsPage.getSecondProductName();
 
-      await app.productsPage.addToComparisonList(0);
-      await app.productsPage.addToComparisonList(1);
+      await app.productsPage.addFirstToComparisonList();
+      await app.productsPage.addSecondToComparisonList();
 
       await app.productsPage.goToComparisonList();
 
       const firstComparisonName =
-        await app.productsPage.getComparisonProductName(1);
+        await app.productsPage.getComparisonFirstProductName();
       const secondComparisonName =
-        await app.productsPage.getComparisonProductName(2);
+        await app.productsPage.getComparisonSecondProductName();
 
       expect(firstComparisonName).toBe(firstItemName);
       expect(secondComparisonName).toBe(secondItemName);
     },
   );
 
-  test(
+  uiTest(
     "Поиск товара iMac",
     {
       tag: ["@UI"],
@@ -118,7 +118,7 @@ test.describe("Набор функциональных UI-тестов", () => {
 
       await app.mainPage.searchProduct(product);
 
-      const searchingProductName = await app.productsPage.getProductName(0);
+      const searchingProductName = await app.productsPage.getFirstProductName();
 
       expect(searchingProductName).toBe(product);
     },

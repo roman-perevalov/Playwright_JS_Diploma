@@ -1,17 +1,17 @@
 import { expect } from "@playwright/test";
-import { test } from "../../src/helpers/fixtures/index";
+import { apiTest } from "../../src/helpers/fixtures/index";
 
 let token;
 
-test.describe("API Challenges", () => {
-  test.beforeAll(async ({ api }, testinfo) => {
+apiTest.describe("API Challenges", () => {
+  apiTest.beforeAll(async ({ api }, testinfo) => {
     let response = await api.challenger.post(testinfo);
     token = response.headers["x-challenger"];
 
     console.log(`${testinfo.project.use.apiURL}/gui/challenges/${token}`);
   });
 
-  test(
+  apiTest(
     `Получить список челленджей (200)`,
     {
       tag: ["@API"],
@@ -24,7 +24,7 @@ test.describe("API Challenges", () => {
     },
   );
 
-  test(
+  apiTest(
     `Получить список ToDo (200)`,
     {
       tag: ["@API"],
@@ -37,7 +37,7 @@ test.describe("API Challenges", () => {
     },
   );
 
-  test(
+  apiTest(
     `Сделать запрос к /todo (404)`,
     {
       tag: ["@API"],
@@ -49,7 +49,7 @@ test.describe("API Challenges", () => {
     },
   );
 
-  test(
+  apiTest(
     `Запросить ToDo по существующему id (200)`,
     {
       tag: ["@API"],
@@ -63,7 +63,7 @@ test.describe("API Challenges", () => {
     },
   );
 
-  test(
+  apiTest(
     `Запросить ToDo по несуществующему id (404)`,
     {
       tag: ["@API"],
@@ -76,7 +76,7 @@ test.describe("API Challenges", () => {
     },
   );
 
-  test(
+  apiTest(
     `Создать ToDo (201)`,
     {
       tag: ["@API"],

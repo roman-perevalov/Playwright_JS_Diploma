@@ -1,4 +1,4 @@
-# 🎓 Дипломный проект по курсу «Playwright + JS» 
+# 🎓 Дипломный проект по курсу «Playwright + JS»
 
 Данный репозиторий содержит итоговый дипломный проект, выполненный в рамках обучения на курсе автоматизации тестирования от школы **«QA.GURU»**.
 
@@ -10,12 +10,12 @@
 
 В проекте используется современный стек технологий для автоматизации тестирования:
 
-* **[Playwright](https://playwright.dev/)** — мощный фреймворк для автоматизации UI и API тестов
-* **[JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)** — основной язык программирования проекта
-* **[Faker.js](https://fakerjs.dev/)** — библиотека для генерации случайных тестовых данных
-* **[Allure Report](https://allurereport.org/)** — утилита для создания наглядных и интерактивных отчетов о результатах тестирования
-* **GitHub Actions** — платформа для непрерывной интеграции и доставки (CI/CD)
-* **Telegram Bot** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
+- **[Playwright](https://playwright.dev/)** — мощный фреймворк для автоматизации UI и API тестов
+- **[JavaScript](https://developer.mozilla.org/ru/docs/Web/JavaScript)** — основной язык программирования проекта
+- **[Faker.js](https://fakerjs.dev/)** — библиотека для генерации случайных тестовых данных
+- **[Allure Report](https://allurereport.org/)** — утилита для создания наглядных и интерактивных отчетов о результатах тестирования
+- **GitHub Actions** — платформа для непрерывной интеграции и доставки (CI/CD)
+- **Telegram Bot** — интеграция для получения автоматических уведомлений о результатах прохождения тестов
 
 ---
 
@@ -24,6 +24,7 @@
 В рамках проекта реализованы автоматизированные проверки для пользовательского интерфейса (UI) и программного интерфейса (API).
 
 ### 💻 UI Тесты
+
 Тестируемое приложение: [demo-opencart.ru](https://demo-opencart.ru)
 
 1. Изменение контактной информации зарегистрированного пользователя
@@ -33,6 +34,7 @@
 5. Поиск товара
 
 ### ⚙️ API Тесты
+
 Тестируемый сервис: [apichallenges.eviltester.com](https://apichallenges.eviltester.com)
 
 1. Получить список челленджей
@@ -54,8 +56,8 @@
 ├── src/helpers/
 │   ├── builders       # Билдер юзера для UI тестов
 │   └── fixtures       # Фикстуры для UI и API тестов
-├── tests/UI           # UI тесты
-└── tests/API          # API тесты
+├── tests/ui           # UI тесты
+└── tests/api          # API тесты
 ```
 
 ---
@@ -63,19 +65,24 @@
 ## 🚀 Как запустить
 
 ### Установка зависимостей
+
 Склонируйте репозиторий и установите необходимые пакеты:
+
 ```bash
 npm install
 npx playwright install
 ```
 
 ### Запуск всех тестов
+
 ```bash
 npm test
 ```
 
 ### Отдельный запуск тестов и отчета
+
 Вы также можете запускать наборы тестов по отдельности:
+
 ```bash
 npm run ui          # только UI тесты
 npm run api         # только API тесты
@@ -86,5 +93,5 @@ npx allure open     # открыть отчет Allure
 
 ## 📬 Контакты
 
-* **Мой телеграм:** [https://t.me/r_perevalov](https://t.me/r_perevalov)
-* **Мой github:** [https://github.com/roman-perevalov](https://github.com/roman-perevalov)
+- **Мой телеграм:** [https://t.me/r_perevalov](https://t.me/r_perevalov)
+- **Мой github:** [https://github.com/roman-perevalov](https://github.com/roman-perevalov)
