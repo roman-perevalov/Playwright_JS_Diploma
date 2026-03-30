@@ -3,17 +3,25 @@ import { test } from "@playwright/test";
 export class ProductsPage {
   constructor(page) {
     this.page = page;
-    // this.iMacProductPage = page.getByText("iMac", { exact: true });
     this.addToCartButton = page.getByRole("button", { name: " Купить" });
     this.productsButton = page.locator("#cart-total");
+    this.getFirstProductNameButton = page.locator("h4 a").nth(0);
+    this.getSecondProductNameButton = page.locator("h4 a").nth(1);
     this.placeOrderButton = page.getByRole("link", {
       name: " Оформить заказ",
     });
-    this.addToFavoriteButton = page.getByRole("button", { name: "" });
-    this.addToComparisonButton = page.getByRole("button", { name: "" });
+    this.addToFavoriteButton = page.getByRole("button", { name: "" }).nth(0);
+    this.addFirstToComparisonButton = page
+      .getByRole("button", { name: "" })
+      .nth(0);
+    this.addSecondToComparisonButton = page
+      .getByRole("button", { name: "" })
+      .nth(1);
     this.comparisonList = page.locator("#compare-total");
     this.favorites = page.getByRole("link", { name: " Закладки (0)" });
     this.comparisonList = page.locator("#compare-total");
+    this.ComparisonFirstProductName = page.locator("tbody tr td").nth(1);
+    this.ComparisonSecondProductName = page.locator("tbody tr td").nth(2);
 
     this.paymentName = page.locator("#input-payment-firstname");
     this.paymentLastName = page.locator("#input-payment-lastname");
@@ -61,9 +69,9 @@ export class ProductsPage {
     });
   }
 
-  async addToFavotire(index) {
+  async addToFavotire() {
     return test.step("Добавить в 'Избранное'", async (step) => {
-      await this.addToFavoriteButton.nth(index).click();
+      await this.addToFavoriteButton.click();
     });
   }
 
@@ -73,15 +81,27 @@ export class ProductsPage {
     });
   }
 
-  async getProductName(index) {
-    return test.step("Получить название товара", async (step) => {
-      return this.page.locator("h4 a").nth(index).innerText();
+  async getFirstProductName() {
+    return test.step("Получить название первого товара", async (step) => {
+      return this.getFirstProductNameButton.innerText();
     });
   }
 
-  async addToComparisonList(index) {
-    return test.step("Добавить товар к сравнению", async (step) => {
-      await this.addToComparisonButton.nth(index).click();
+  async getSecondProductName() {
+    return test.step("Получить название второго товара", async (step) => {
+      return this.getSecondProductNameButton.innerText();
+    });
+  }
+
+  async addFirstToComparisonList() {
+    return test.step("Добавить первый товар к сравнению", async (step) => {
+      await this.addFirstToComparisonButton.click();
+    });
+  }
+
+  async addSecondToComparisonList() {
+    return test.step("Добавить второй товар к сравнению", async (step) => {
+      await this.addSecondToComparisonButton.click();
     });
   }
 
@@ -91,9 +111,15 @@ export class ProductsPage {
     });
   }
 
-  async getComparisonProductName(index) {
-    return test.step("Получить название товара из сравнения", async (step) => {
-      return await this.page.locator("tbody tr td").nth(index).innerText();
+  async getComparisonFirstProductName() {
+    return test.step("Получить название первого товара из сравнения", async (step) => {
+      return await this.ComparisonFirstProductName.innerText();
+    });
+  }
+
+  async getComparisonSecondProductName() {
+    return test.step("Получить название второго товара из сравнения", async (step) => {
+      return await this.ComparisonSecondProductName.innerText();
     });
   }
 

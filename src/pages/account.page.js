@@ -11,6 +11,10 @@ export class AccountPage {
     this.passwordConfirmField = page.locator("#input-confirm");
     this.agreeTermsButton = page.getByRole("checkbox");
     this.continueButton = page.locator(".btn.btn-primary");
+    this.getNameButton = page.getByRole("textbox", { name: "* Имя, Отчество" });
+    this.getLastnameButton = page.getByRole("textbox", { name: "* Фамилия" });
+    this.getEmailButton = page.getByRole("textbox", { name: "* E-Mail" });
+    this.getPhoneButton = page.getByRole("textbox", { name: "* Телефон" });
     this.sucessText = page.getByRole("heading", {
       name: "Ваша учетная запись создана!",
     });
@@ -57,18 +61,18 @@ export class AccountPage {
   }
 
   async getName() {
-    return this.page.getByRole("textbox", { name: "* Имя, Отчество" });
+    return this.getNameButton;
   }
 
   async getLastname() {
-    return this.page.getByRole("textbox", { name: "* Фамилия" });
+    return this.getLastnameButton;
   }
 
   async getEmail() {
-    return this.page.getByRole("textbox", { name: "* E-Mail" });
+    return this.getEmailButton;
   }
 
   async getPhone() {
-    return this.page.getByRole("textbox", { name: "* Телефон" });
+    return this.getPhoneButton;
   }
 }

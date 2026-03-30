@@ -1,2 +1,2 @@
 export * from "./api.fixtures";
-export { ui, expect } from "./ui.fixtures";
+export { uiTest, expect } from "./ui.fixtures";
