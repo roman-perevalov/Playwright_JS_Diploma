@@ -1,10 +1,10 @@
 name: Playwright JS Diploma /w UI and API tests
 # Запускаем при пуше в main ветку:
 on:
-  push: 
+  push:
     branches:
       - main
-# Ручной запуск:
+  # Ручной запуск:
   workflow_dispatch:
 
 jobs:
@@ -20,6 +20,8 @@ jobs:
       - name: Установка браузеров
         run: npx playwright install --with-deps
       - name: Запускаем тесты
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: npm t
       - name: Сгенерировать Allure отчет в один файл
         run: npx allure awesome ./allure-results --single-file
@@ -32,6 +34,6 @@ jobs:
         with:
           name: Allure Report
           path: |
-              allure-report/index.html
-              allure-results
-              playwright-report
+            allure-report/index.html
+            allure-results
+            playwright-report

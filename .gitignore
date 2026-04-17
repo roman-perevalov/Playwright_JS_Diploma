@@ -10,3 +10,4 @@ allure-report/
 /playwright/.auth/
 .DS_Store
 *.code-workspace
+notifications/

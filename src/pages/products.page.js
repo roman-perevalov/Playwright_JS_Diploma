@@ -39,19 +39,11 @@ export class ProductsPage {
     this.confirmOrderButton = page.locator("#button-confirm");
   }
 
-  async addToCart() {
-    return test.step("Добавить в 'Корзину'", async (step) => {
+  async buyProduct(paymentName, paymentLastName, paymentAddress, paymentCity) {
+    await test.step("Добавить в 'Корзину'", async (step) => {
       await this.addToCartButton.click();
     });
-  }
-
-  async placeAnOrder(
-    paymentName,
-    paymentLastName,
-    paymentAddress,
-    paymentCity,
-  ) {
-    return test.step("Заполнить данные для заказа", async (step) => {
+    await test.step("Заполнить данные для заказа", async (step) => {
       await this.productsButton.click();
       await this.placeOrderButton.click();
       await this.paymentName.fill(paymentName);
@@ -69,14 +61,11 @@ export class ProductsPage {
     });
   }
 
-  async addToFavotire() {
-    return test.step("Добавить в 'Избранное'", async (step) => {
+  async addAndGoToFavorite() {
+    await test.step("Добавить в 'Избранное'", async (step) => {
       await this.addToFavoriteButton.click();
     });
-  }
-
-  async goToFavorite() {
-    return test.step("Перейти в 'Избранное'", async (step) => {
+    await test.step("Перейти в 'Избранное'", async (step) => {
       await this.favorites.click();
     });
   }

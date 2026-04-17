@@ -44,18 +44,15 @@ export class AccountPage {
   }
 
   async editContactInforfation(name, lastName, email, phone) {
-    return test.step("Заполнить данные новой информацией", async (step) => {
+    await test.step("Перейти на страницу и отредактировать информацию", async (step) => {
+      await this.changeContactInfoButton.click();
       await this.nameField.fill(name);
       await this.lastNameField.fill(lastName);
       await this.emailField.fill(email);
       await this.phoneField.fill(phone);
 
       await this.continueButton.click();
-    });
-  }
 
-  async goToChangeContactInformation() {
-    return test.step("Перейти на страницу редактирования данных", async (step) => {
       await this.changeContactInfoButton.click();
     });
   }

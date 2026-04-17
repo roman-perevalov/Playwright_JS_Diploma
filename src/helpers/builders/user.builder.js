@@ -26,6 +26,16 @@ export class UserBuilder {
     return this;
   }
 
+  addStreetAddress() {
+    this.streetAddress = faker.location.streetAddress(true);
+    return this;
+  }
+
+  addCityAddress() {
+    this.cityAddress = faker.location.city();
+    return this;
+  }
+
   generate() {
     return {
       name: this.name,
@@ -33,6 +43,8 @@ export class UserBuilder {
       email: this.email,
       phone: this.phone,
       password: this.password,
+      streetAddress: this.streetAddress,
+      cityAddress: this.cityAddress,
     };
   }
 }

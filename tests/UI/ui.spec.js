@@ -13,9 +13,8 @@ uiTest.describe("Набор функциональных UI-тестов", () =>
         .addName()
         .addLastName()
         .addEmail()
-        .addPhone();
-
-      await app.accountPage.goToChangeContactInformation();
+        .addPhone()
+        .generate();
 
       await app.accountPage.editContactInforfation(
         newUserinfo.name,
@@ -23,8 +22,6 @@ uiTest.describe("Набор функциональных UI-тестов", () =>
         newUserinfo.email,
         newUserinfo.phone,
       );
-
-      await app.accountPage.goToChangeContactInformation();
 
       await expect(await app.accountPage.getName()).toHaveValue(
         newUserinfo.name,
@@ -47,14 +44,20 @@ uiTest.describe("Набор функциональных UI-тестов", () =>
       tag: ["@UI"],
     },
     async ({ app, registeredUser }) => {
+      const deliveryDetails = new UserBuilder()
+        .addName()
+        .addLastName()
+        .addStreetAddress()
+        .addCityAddress()
+        .generate();
+
       await app.mainPage.goToiMacs();
 
-      await app.productsPage.addToCart();
-      await app.productsPage.placeAnOrder(
-        "TestName",
-        "TestLastName",
-        "Test Adress 13",
-        "Test City",
+      await app.productsPage.buyProduct(
+        deliveryDetails.name,
+        deliveryDetails.lastName,
+        deliveryDetails.streetAddress,
+        deliveryDetails.cityAddress,
       );
 
       await expect(app.productsPage.getContentLocator()).toContainText(
@@ -73,8 +76,7 @@ uiTest.describe("Набор функциональных UI-тестов", () =>
 
       const productName = await app.productsPage.getFirstProductName();
 
-      await app.productsPage.addToFavotire();
-      await app.productsPage.goToFavorite();
+      await app.productsPage.addAndGoToFavorite();
 
       await expect(app.productsPage.getTbodyLocator()).toContainText(
         productName,
