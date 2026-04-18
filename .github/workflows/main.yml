@@ -10,6 +10,10 @@ on:
 jobs:
   All_UI_and_API_tests:
     runs-on: ubuntu-latest
+
+    env:
+      TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6.0.2
@@ -20,8 +24,6 @@ jobs:
       - name: Установка браузеров
         run: npx playwright install --with-deps
       - name: Запускаем тесты
-        env:
-          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
         run: npm t
       - name: Сгенерировать Allure отчет в один файл
         run: npx allure awesome ./allure-results --single-file

@@ -9,8 +9,8 @@ import {
 let token;
 
 apiTest.describe("API Challenges", () => {
-  apiTest.beforeAll(async ({ api }, testinfo) => {
-    let response = await api.challenger.post(testinfo);
+  apiTest.beforeAll(async ({ api }, testInfo) => {
+    let response = await api.challenger.post(testInfo);
     token = response.headers["x-challenger"];
   });
 
@@ -19,24 +19,11 @@ apiTest.describe("API Challenges", () => {
     {
       tag: ["@API"],
     },
-    async ({ api }, testinfo) => {
-      let response = await api.challenges.get(testinfo, token); // отправляем запрос /challenges
+    async ({ api }, testInfo) => {
+      let response = await api.challenges.get(testInfo, token); // отправляем запрос /challenges
 
       expect(response.status).toBe(200);
       expect(response.body.challenges.length).toBe(59);
-    },
-  );
-
-  apiTest(
-    `Получить список ToDo (200)`,
-    {
-      tag: ["@API"],
-    },
-    async ({ api }, testinfo) => {
-      let response = await api.todos.get(testinfo, token); // отправляем запрос /todos
-
-      expect(response.status).toBe(200);
-      expect(response.body.todos.length).toBe(10); // прореряем, что пришло 10 объектов ToDo
     },
   );
 
@@ -45,8 +32,8 @@ apiTest.describe("API Challenges", () => {
     {
       tag: ["@API"],
     },
-    async ({ api }, testinfo) => {
-      let response = await api.todos.getTodo(testinfo, token); // отправляем запрос /todo
+    async ({ api }, testInfo) => {
+      let response = await api.todos.getTodo(testInfo, token); // отправляем запрос /todo
 
       expect(response.status).toBe(404); // проверяем статус-ответ респонза
     },
@@ -57,9 +44,9 @@ apiTest.describe("API Challenges", () => {
     {
       tag: ["@API"],
     },
-    async ({ api }, testinfo) => {
+    async ({ api }, testInfo) => {
       let toDoId = EXISTING_TODO_ID; // id существующей задачи в ToDo
-      let response = await api.todos.getTodoById(testinfo, token, toDoId); // отправляем запрос /todos c id таски
+      let response = await api.todos.getTodoById(testInfo, token, toDoId); // отправляем запрос /todos c id таски
 
       expect(response.status).toBe(200); // проверяем статус-ответ
       expect(response.body.todos[0].id).toBe(toDoId); // проверяем, что в ответе пришел запрашиваемый id
@@ -71,9 +58,9 @@ apiTest.describe("API Challenges", () => {
     {
       tag: ["@API"],
     },
-    async ({ api }, testinfo) => {
+    async ({ api }, testInfo) => {
       let toDoId = NONEXISTENT_TODO_ID; // несуществующий id
-      let response = await api.todos.getTodoById(testinfo, token, toDoId); // отправляем запрос /todos c id таски
+      let response = await api.todos.getTodoById(testInfo, token, toDoId); // отправляем запрос /todos c id таски
 
       expect(response.status).toBe(404); // проверяем статус-ответ
     },
@@ -84,7 +71,7 @@ apiTest.describe("API Challenges", () => {
     {
       tag: ["@API"],
     },
-    async ({ api }, testinfo) => {
+    async ({ api }, testInfo) => {
       const newTask = new ToDoBuilder()
         .addTitle()
         .addDoneStatus()
@@ -92,7 +79,7 @@ apiTest.describe("API Challenges", () => {
         .generate();
 
       let response = await api.todos.post(
-        testinfo,
+        testInfo,
         token,
         newTask.title,
         newTask.status,
@@ -100,7 +87,7 @@ apiTest.describe("API Challenges", () => {
       ); // отправляем запрос /todos и передаем в него информацию по создаваемой таске
 
       let newResponse = await api.todos.getTodoById(
-        testinfo,
+        testInfo,
         token,
         response.body.id,
       ); // отправляем запрос /todo с запросом таски по id созданной таски

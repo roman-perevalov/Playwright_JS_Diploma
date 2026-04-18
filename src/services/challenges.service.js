@@ -5,10 +5,10 @@ export class ChallengesService {
     this.request = request;
   }
 
-  async get(testinfo, token) {
+  async get(testInfo, token) {
     return test.step("GET /challenges", async () => {
       const response = await this.request.get(
-        `${testinfo.project.use.apiURL}/challenges`,
+        `${testInfo.project.use.apiURL}/challenges`,
         { headers: { "X-CHALLENGER": token } },
       );
 

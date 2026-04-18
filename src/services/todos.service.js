@@ -5,10 +5,10 @@ export class TodosService {
     this.request = request;
   }
 
-  async get(testinfo, token) {
+  async get(testInfo, token) {
     return test.step("GET /todos", async () => {
       const response = await this.request.get(
-        `${testinfo.project.use.apiURL}/todos`,
+        `${testInfo.project.use.apiURL}/todos`,
         { headers: { "X-CHALLENGER": token } },
       );
 
@@ -20,10 +20,10 @@ export class TodosService {
     });
   }
 
-  async getTodo(testinfo, token) {
+  async getTodo(testInfo, token) {
     return test.step("GET /todo", async () => {
       const response = await this.request.get(
-        `${testinfo.project.use.apiURL}/todo`,
+        `${testInfo.project.use.apiURL}/todo`,
         { headers: { "X-CHALLENGER": token } },
       );
 
@@ -33,10 +33,10 @@ export class TodosService {
     });
   }
 
-  async getTodoById(testinfo, token, id) {
+  async getTodoById(testInfo, token, id) {
     return test.step("GET /todo", async () => {
       const response = await this.request.get(
-        `${testinfo.project.use.apiURL}/todos/${id}`,
+        `${testInfo.project.use.apiURL}/todos/${id}`,
         { headers: { "X-CHALLENGER": token } },
       );
 
@@ -47,10 +47,10 @@ export class TodosService {
     });
   }
 
-  async post(testinfo, token, title, status, description) {
+  async post(testInfo, token, title, status, description) {
     return test.step("POST /todos", async () => {
       const response = await this.request.post(
-        `${testinfo.project.use.apiURL}/todos`,
+        `${testInfo.project.use.apiURL}/todos`,
         {
           headers: { "X-CHALLENGER": token },
           data: {

@@ -5,10 +5,10 @@ export class ChallengerService {
     this.request = request;
   }
 
-  async post(testinfo) {
+  async post(testInfo) {
     return test.step("POST /challenger", async () => {
       const response = await this.request.post(
-        `${testinfo.project.use.apiURL}/challenger`,
+        `${testInfo.project.use.apiURL}/challenger`,
       );
 
       const headers = response.headers();
